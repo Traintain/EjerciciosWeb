@@ -1,0 +1,60 @@
+/* Add your styles here */
+.item1 {
+  grid-area: titulo;
+  background-color: black;
+  color: blanchedalmond;
+  text-align: center;
+}
+.item2 {
+  grid-area: portada;
+}
+.item3 {
+  grid-area: sinopsis;
+  background-color: black;
+  color: blanchedalmond;
+  text-indent: 20 px;
+  font-size: 15px;
+}
+.item4 {
+  grid-area: metafora;
+  text-align: justify;
+  background-color: blanchedalmond;
+  color: black;
+}
+.item5 {
+  grid-area: puntuacion;
+  background-color: black;
+  color: blanchedalmond;
+}
+
+.item6 {
+  grid-area: trailer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'titulo titulo titulo titulo portada portada'
+    'titulo titulo titulo titulo portada portada'
+    'sinopsis sinopsis sinopsis sinopsis portada portada'
+    'sinopsis sinopsis sinopsis sinopsis portada portada'
+    'metafora metafora metafora metafora portada portada'
+    'metafora metafora metafora metafora portada portada'
+    'puntuacion puntuacion puntuacion puntuacion trailer trailer'
+    'puntuacion puntuacion puntuacion puntuacion trailer trailer';
+}
+
+.grid-container > div {
+  padding: 10px;
+  row-gap: 10 px;
+  font-size: 20px;
+}
+
+.cita {
+  text-align: right;
+  font-size: 20px;
+}
+
+#fondo {
+  background-color: black;
+}
